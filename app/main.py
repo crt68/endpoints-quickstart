@@ -16,10 +16,8 @@ import logging
 
 from flask import Flask
 from flask import request
-from airports import Airports
 
 app = Flask(__name__)
-airport_util = Airports()
 
 @app.route('/airportName', methods=['GET'])
 def airportName():
